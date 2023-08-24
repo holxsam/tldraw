@@ -263,8 +263,8 @@ function TldrawEditorWithReadyStore({
 			user,
 			initialState,
 		})
-		;(window as any).app = editor
-		;(window as any).editor = editor
+		;(window as any).__tldraw.app = editor
+		;(window as any).__tldraw.editor = editor
 		setEditor(editor)
 
 		return () => {
